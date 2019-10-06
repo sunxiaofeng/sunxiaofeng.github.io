@@ -1,0 +1,7 @@
+# build output
+.next
+out
+
+# dependencies
+node_modules
+package-lock.json
