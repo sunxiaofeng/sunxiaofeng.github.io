@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "deploy-travis-ci" : "next build && next export && touch out/CNAME && echo \"sunxiaofeng.net\" >> out/CNAME",
-    "deploy-githubpage": "push-dir --dir=out --branch=master"
+    "deploy-travis-ci" : "next build && next export && touch out/CNAME && echo \"sunxiaofeng.net\" >> out/CNAME"
     
   },
   "repository": {
@@ -23,12 +22,10 @@
     "url": "https://github.com/sunxiaofeng/sunxiaofeng.github.io/issues"
   },
   "homepage": "https://github.com/sunxiaofeng/sunxiaofeng.github.io#readme",
+  
   "dependencies": {
     "next": "^9.0.8",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
-  },
-  "devDependencies": {
-    "push-dir": "^0.4.1"
   }
 }
