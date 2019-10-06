@@ -1,19 +1,23 @@
+## https://nuxtjs.org/faq/github-pages/
 language: node_js
+node_js:
+  - '9'
+
 cache:
   directories:
     - ~/.npm
+
 notifications:
   email:
     recipients:
       - sunxiaofeng@msn.com
     on_success: always
     on_failure: always
-node_js:
-  - '9'
+
 git:
   depth: 3
 script:
-  - yarn export
+  - yarn deploy-travis-ci
 deploy:
   provider: pages
   skip-cleanup: true
